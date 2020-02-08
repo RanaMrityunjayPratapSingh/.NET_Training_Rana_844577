@@ -1,0 +1,71 @@
+<!doctype>
+<html>
+<head>
+<title>Javascript String</title>
+</head>
+
+<body bgcolor='green'>
+
+//DOM
+
+<p>This is fst paragraph</p>
+<p>This is second paragraph</p>
+<p id="p1">This is Demo paragraph</p>
+
+
+
+
+<script type="text/javascript">
+
+var str="Hello Good Morning India, Have a Good day !";
+
+document.writeln('Length of : '+str + ' is '+str.length);
+document.writeln('</br>');
+var ssl= str.substr(6,15);
+document.writeln('substr = ' + ssl);
+document.writeln('</br>');
+var ssv= str.substring(6,15);
+document.writeln('substring : = ' +ssv);
+document.writeln('</br>');
+document.writeln('index of Morning : '+str.indexOf('Morning'));
+document.writeln('</br>')
+document.writeln('index of last good : '+str.lastIndexOf('Good'));
+
+
+
+var emp=['Joshi ', 'rancho ', 'John ', 'Rockey ', 'kavita ', 'Savita '];
+document.writeln('</br></br>');
+document.writeln('Number of employes : ' +emp.length);
+document.writeln('</br>');
+document.write('All Employess ---> ' +emp);
+document.writeln('</br></br>');
+
+//Inserting an array element
+emp.push('Babita');
+document.writeln('Number of employees = '+emp.length);
+document.writeln('</br>')
+document.write('All employees ---> ' +emp);
+document.writeln('</br>')
+
+//Removing an array element
+emp.pop();
+
+document.writeln('</br></br>')
+document.writeln('Number of employees = ' +emp.length);
+document.writeln('</br>')
+document.writeln('All employees ---> ' +emp);
+
+//Get data of particular location
+document.writeln('</br></br>')
+document.writeln('The employees at the 3rd position : ' +emp[2]);
+
+
+
+var x=document.getElementById("p");
+document.getElementByTagName("p1").innerHTML=x[0].innerHTML;
+
+
+</script>
+</body>
+</html>
+

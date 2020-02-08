@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>Combination of JS HTML CSS</title>
+<link rel="stylesheet" type="text/css" href="JScsht.css">
+
+
+<script>
+function myFunc(){
+document.getElementById("demo").innerHTML="Paragraph Changed.";
+}
+</script>
+
+
+<!--
+<h2>Date of the day</h2>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML=Date()">
+Click me to display.</button>
+<p id='demo'></p>
+-->
+
+
+
+<h2>What you want to do</h2>
+
+<p id="demo"> Don't want to do anything</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML="Lets do something"'>Click Me!</button>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button></br></br>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button></br></br>
+
+<button type="button" onclick="myFunc()"> Function </button>
+
+
+
+
+<h2>JS Objects</h2>
+<h1 id="remo"></h1>
+<h2 id="gemo"></h2>
+
+<script>
+var person= {
+fstN:"John",
+lstN:"Doe",
+age:28,
+eyeclr:"blue"
+};
+document.getElementById("remo").innerHTML =person.fstN + " is " + person.age + " years old." +"</br>";
+
+
+
+var name1="Garry";
+var name2="Sam";
+var name3="Jophery";
+document.getElementById("gemo").innerHTML =name1 + "</br>" + name2 + "</br>" + typeof 7.8 + "</br>" + typeof name3;
+</script>
+
+
+
+<h1 id="kemo"></h1>
+
+<script>
+function mfnc(a,b){
+return a * b;
+}
+document.getElementById("kemo").innerHTML=mfnc(3,5);
+</script>
+
+
+
+
+
+</body>
+</html>
